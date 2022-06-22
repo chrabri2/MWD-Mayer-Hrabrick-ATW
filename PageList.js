@@ -4,8 +4,7 @@ import {
   useState
 } from "https://unpkg.com/htm/preact/standalone.module.js";
 
-// This will import the page list from service which extracts it from a database
-import { getPageList } from "./PageList.js";
+import { getPageList } from "./PageList-Service.js";
 
 export function PageList({ title, children }) {
   useEffect(() => {
@@ -26,8 +25,8 @@ export function PageList({ title, children }) {
     <ul>
       ${pages.map(
         (page) =>
-          html` <li key="${page.id}">
-            <link href="${page.url}">${page.urlText}</link>
+          html` <li key="${page}">
+            <a href="${page.url}">${page.urlText}</a>
           </li>`
       )}
     </ul>
