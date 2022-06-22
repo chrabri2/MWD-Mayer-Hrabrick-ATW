@@ -11,6 +11,7 @@ export function TopBanner({ title, children }) {
     document.title = title;
   }, [title]);
 
+  // Placeholder function for a future service
   function clickAlert() {
     alert("In future, this will change the theme to light or dark");
   }

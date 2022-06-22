@@ -1,5 +1,6 @@
 import { html } from "https://unpkg.com/htm/preact/standalone.module.js";
 
+// For the future this event will update themes instead of triggering an alert
 export default function ToggleTheme({ onDarkClick, onLightClick }) {
   return html`
     <form action="/light_dark.php">

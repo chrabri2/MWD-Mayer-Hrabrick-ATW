@@ -19,6 +19,7 @@ export function PageList({ title, children }) {
       setPages(data);
     });
   }, []);
+
   // Creates an unordered list of the pages on the wiki, linking to each page
   return html`
     <h3>${title}</h3>

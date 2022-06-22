@@ -4,7 +4,7 @@ import {
 } from "https://unpkg.com/htm/preact/standalone.module.js";
 
 import { Header } from "./Header.js";
-// import { PageList } from "./PageList.js";
+
 import { TopBanner } from "./TopBanner.js";
 import { PageList } from "./PageList.js";
 
@@ -16,13 +16,9 @@ function App() {
     <${Header} title="Welcome to Axiom Tree Wiki!">
       Please select a page to navigate
     </${Header}>
-    <${PageList} />
+    <${PageList} title="List of Pages"/>
     
   `;
 }
 
 render(html` <${App} /> `, document.getElementById("app"));
-// This will be added back in once the axios is received from Carter
-// <${PageList} title="List of Pages">
-
-//     </${PageList}>

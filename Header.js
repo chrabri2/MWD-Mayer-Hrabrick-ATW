@@ -15,5 +15,3 @@ export function Header({ title, children }) {
     </header>
   `;
 }
-
-// Test comment for commit
