@@ -1,7 +1,4 @@
-import {
-  html,
-  useEffect
-} from "https://unpkg.com/htm/preact/standalone.module.js";
+import { html } from "https://unpkg.com/htm/preact/standalone.module.js";
 
 import ToggleTheme from "./ToggleTheme.js";
 
