@@ -1,0 +1,55 @@
+/* This styling is all temporary pending consultation with Carter */
+
+body {
+  background: rgb(44, 140, 170);
+}
+
+.topBannerDark {
+  /* Uses flexbox to style the top banner */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  background-color: rgb(59, 54, 147);
+  font-family: "Roboto", sans-serif;
+  color: gainsboro;
+  border: 3px solid black;
+}
+
+/* I added padding to every element within the flexbox
+individually. If there is a way to simply give every element
+10px of padding without having to assign each one individually,
+I would prefer to use that. */
+
+.topBannerDark p {
+  /* The flex command causes the p tag to
+  take up all the available free space left by the
+  other two tags, which leaves it at the far left of
+  the banner. Ideally, I would like to simply be able
+  to set it to the far left so that I can use the flex
+  command for other elements if necessary, but I do not
+  know how to do so using flexbox */
+  flex: 1;
+  padding: 10px;
+}
+
+.topBannerDark form {
+  padding: 10px;
+}
+
+.topBannerDark form.Search {
+  /* Gives the search bar extra top padding to get it in line
+  with the rest of the banner */
+  padding-top: 20px;
+}
+
+/* Condense the light and dark selection */
+.topBannerDark form p {
+  padding: 0px;
+  padding-top: 10px;
+  margin: 0px;
+}
+
+.topBannerDark form input {
+  margin: 0px;
+  padding-top: 10px;
+}
