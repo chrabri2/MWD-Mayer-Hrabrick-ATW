@@ -2,8 +2,9 @@
   "pages": [
     {
       "name": "Axiom Tree Wiki",
-      "text": "Main Page",
-      "url": "/Axiom-Tree-Wiki/axiom-tree-wiki.html"
+      "urlText": "Main Page",
+      "id": "axiom-tree-wiki",
+      "url": "./index.html"
     }
   ]
 }
