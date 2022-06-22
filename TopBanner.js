@@ -6,11 +6,7 @@ import {
 import ToggleTheme from "./ToggleTheme.js";
 
 // TODO: Introduce navigation up here
-export function TopBanner({ title, children }) {
-  useEffect(() => {
-    document.title = title;
-  }, [title]);
-
+export function TopBanner() {
   // Placeholder function for a future service
   function clickAlert() {
     alert("In future, this will change the theme to light or dark");

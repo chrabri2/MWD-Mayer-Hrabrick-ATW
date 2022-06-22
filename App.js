@@ -3,8 +3,8 @@ import {
   render
 } from "https://unpkg.com/htm/preact/standalone.module.js";
 
+// Import functions from child components
 import { Header } from "./Header.js";
-
 import { TopBanner } from "./TopBanner.js";
 import { PageList } from "./PageList.js";
 
